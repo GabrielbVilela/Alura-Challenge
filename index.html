@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Alura + Oracle</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="main__logo">
+            <img class="main__logo__img" src="imgs/Frame 6.png" alt="Logo da Alura" width="120" height="48">
+        </div>
+        <div class="main__container">
+            <textarea class="main__container__textarea" placeholder="Digite seu texto" name="texto" id="taTexto"></textarea>
+            <div class="main__container__info">
+                <img class="main__container__info__img" src="imgs/Group.png" alt="Simbolo de exclamação, informando ao importante" width="16" height="16">
+                <p class="main__container__info_p">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="main__container__butoes">
+                <button id="bCripto" onclick="cripto()" class="main__container__butoes__button bAzul">Criptografar</button>
+                <button id="bDescripto" onclick="descripto()" class="main__container__butoes__button bBranco">Descriptografar</button>
+            </div>
+        </div>
+        <div class="main__resultado">
+            <div id="resultadoSemTexto" class="main__resultado__semTexto">
+                <img src="imgs/High quality products 1 1.svg" alt="Menino olhando um diamante com uma lupa" class="main__resultado__semTexto__img">
+                <div class="main__resultado__semTexto__info">
+                    <h2 class="main__resultado__semTexto__info__h2">Nenhuma mensagem encontrada</h2>
+                    <p class="main__resultado__semTexto__info__p">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div id="resultadoComTexto" class="main__resultado__texto">
+                <textarea name="resultado" id="taResultado" class="main__resultado__texto__textarea" readonly></textarea>
+                <button class="main__resultado__texto__button bBranco" onclick="copiar()" id="buttonCopiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p"></p>
+    </footer>
+</body>
+</html>
