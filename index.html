@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Alura + Oracle</title>
+    <meta name="author" content="Gabriel Vilela">
+    <meta name="keywords" content="Alura, Oracle, Challenge, Desafio, Gabriel Vilela, Decodificador">
+    <meta name="description" content="Desafio da Alura + Oracle: Praticando lógica de programação: Challenge Decodificador de Texto">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js"></script>
 </head>
 <body>
+    <!-- Main -->
     <main class="main">
+        <!-- Main -- Logo alura-->
         <div class="main__logo">
             <img class="main__logo__img" src="imgs/Frame 6.png" alt="Logo da Alura" width="120" height="48">
         </div>
+        <!-- Main -- Coluna do meio, input da Criptografia-->
         <div class="main__container">
             <textarea class="main__container__textarea" placeholder="Digite seu texto" name="texto" id="taTexto"></textarea>
+            <!-- Main -- Coluna do meio, input da Criptografia -- informação do que não pode colocar na textarea -->
             <div class="main__container__info">
                 <img class="main__container__info__img" src="imgs/Group.png" alt="Simbolo de exclamação, informando ao importante" width="16" height="16">
                 <p class="main__container__info_p">Apenas letras minúsculas e sem acento.</p>
             </div>
-            <div class="main__container__butoes">
-                <button id="bCripto" onclick="cripto()" class="main__container__butoes__button bAzul">Criptografar</button>
-                <button id="bDescripto" onclick="descripto()" class="main__container__butoes__button bBranco">Descriptografar</button>
+            <!-- Main -- Coluna do meio, input da Criptografia -- Botões -->
+            <div class="main__container__botoes">
+                <button id="bCripto" onclick="cripto()" class="main__container__botoes__button bAzul">Criptografar</button>
+                <button id="bDescripto" onclick="descripto()" class="main__container__botoes__button bBranco">Descriptografar</button>
             </div>
         </div>
+        <!-- Main -- Coluna da direita, output da Criptografia -->
         <div class="main__resultado">
+            <!-- Main -- Coluna da direita, output da Criptografia -- Resultado sem nenhum input inserido -->
             <div id="resultadoSemTexto" class="main__resultado__semTexto">
                 <img src="imgs/High quality products 1 1.svg" alt="Menino olhando um diamante com uma lupa" class="main__resultado__semTexto__img">
                 <div class="main__resultado__semTexto__info">
@@ -32,12 +42,14 @@
                     <p class="main__resultado__semTexto__info__p">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
             </div>
+            <!-- Main -- Coluna da direita, output da Criptografia -- Resultado com input inserido -->
             <div id="resultadoComTexto" class="main__resultado__texto">
                 <textarea name="resultado" id="taResultado" class="main__resultado__texto__textarea" readonly></textarea>
                 <button class="main__resultado__texto__button bBranco" onclick="copiar()" id="buttonCopiar">Copiar</button>
             </div>
         </div>
     </main>
+    <!-- Rodapé -->
     <footer class="footer">
         <p class="footer__p">Desafio da Alura + Oracle de um site de criptografia de Texto</p>
         <p class="footer__p">2024 Criado por <a href="https://www.linkedin.com/in/gabrielbvilela/" target="_blank">Gabriel Vilela</a></p>
