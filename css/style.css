@@ -4,13 +4,16 @@ body {
     background-color: #F3F5FC;
     font-family: "inter", sans-serif;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main {
     display: flex;
     justify-content: space-between;
     width: 94vw;
-    height: 94vh;
+    height: 87vh;
     margin: 3vh auto;
 }
 
@@ -117,6 +120,18 @@ body {
 
 #resultadoComTexto {
     display: none;
+}
+
+.footer {
+    text-align: center;
+    color: #0A3871;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+a:hover {
+    color: red;
+    font-weight: 900;
 }
 
 textarea {
